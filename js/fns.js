@@ -4,7 +4,7 @@ var videos;
 function Range(startSeconds, endSeconds) {
 	this.startSeconds = startSeconds;
 	this.endSeconds = endSeconds;
-	this.contains = function(second) {
+	this.contains = function (second) {
 		return second >= this.startSeconds && second <= this.endSeconds;
 	};
 }
@@ -12,8 +12,8 @@ function Range(startSeconds, endSeconds) {
 function Video(filename, activeRanges) {
 	this.filename = filename;
 	this.activeRanges = activeRanges;
-	this.isActiveDuring = function(second) {
-		for(var i = 0; i < this.activeRanges.length; i++) {
+	this.isActiveDuring = function (second) {
+		for (var i = 0; i < this.activeRanges.length; i++) {
 			if (this.activeRanges[i].contains(second)) {
 				return true;
 			}
@@ -24,7 +24,7 @@ function Video(filename, activeRanges) {
 }
 
 function setupTimer() {
-	$.getJSON('videos/activity.json', function(data) {
+	$.getJSON('videos/activity.json', function (data) {
 		var jsonVideos = data.videos;
 		videos = [];
 		
