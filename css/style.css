@@ -9,25 +9,47 @@
 
 body {
 	margin: 0;
-	background-color: #F0F1F2;
+	background-color: #444;
 }
 
 table {
 	margin-left: auto;
 	margin-right:auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	
 	background-color: #000000;
+	
 	border-spacing: 0;
+	border-collapse: collapse;
+	
+	outline-width:0;
+	outline: 0;
 	
 	border: 0;
 	padding: 0;
 }
 
-.videoHeader {
+tr, th, td {
+	border-collapse: collapse;
+	border-spacing: 0;
+	
 	outline-width:0;
+	outline: 0;
+	
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+.videoHeader {
 	position: absolute;
 	top: 2px;
 	left: 2px;
 	color: #C0C0C0;
+	
+	outline-width:0;
+	outline: 0;
 	
 	margin: 0;
 	border: 0;
@@ -43,16 +65,10 @@ table {
 }
 
 video {
-	outline-width:0;
+	display:block;
 	
-	margin: 0;
-	border: 0;
-	padding: 0;
-}
-
-tr, th, td {
-	border-spacing: 0;
 	outline-width:0;
+	outline: 0;
 	
 	margin: 0;
 	border: 0;

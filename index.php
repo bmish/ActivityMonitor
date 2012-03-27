@@ -36,7 +36,7 @@ $rowCount = getRowCount($videoCount);
 				echo '<td class="videoCell" id="videoCell-'.$videoFilename.'">';
 				echo '<div class="videoCellDiv">';
 				echo '<div class="videoHeader" id="videoHeader-'.$videoFilename.'">'.$video->getTitle().'</div>';
-				echo '<video width="'.$videoWidth.'" height="'.$videoHeight.'" loop autoplay controls="" id="video-'.$videoFilename.'">';
+				echo '<video width="'.$videoWidth.'" height="'.$videoHeight.'" muted loop autoplay controls="" id="video-'.$videoFilename.'">';
 				echo '<source src="videos/'.$videoFilename.'" />';
 				echo '</video>';
 				echo '</div>';
