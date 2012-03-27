@@ -1,0 +1,21 @@
+{
+	"videosPerRow": 4, 
+	"videos": 
+	[
+		{
+			"filename": "video1.mov",
+			"title": "Room 1",
+			"activeRanges":
+			[
+				{
+					"startSecond": 2,
+					"endSecond": 6
+				},
+				{
+					"startSecond": 24,
+					"endSecond": 30
+				}
+			]
+		}
+	]
+}

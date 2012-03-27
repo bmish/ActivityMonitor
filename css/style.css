@@ -1,0 +1,47 @@
+#wrapper {
+	font-family: "Helvetica Neue";
+	width: 100%;
+}
+
+#page {
+	margin-top: 50px;
+}
+
+body {
+	margin: 0;
+	background-color: #F0F1F2;
+}
+
+table {
+	margin-left: auto;
+	margin-right:auto;
+	background-color: #000000;
+	border-spacing: 0;
+	border: 0;
+	padding: 0;
+}
+
+.videoHeader {
+	border: 0;
+	outline-width:0;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: 20px;
+	
+}
+
+video {
+	outline-width:0;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+tr, th, td {
+	border-spacing: 0;
+	outline-width:0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
