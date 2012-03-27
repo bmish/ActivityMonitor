@@ -1,3 +1,5 @@
 *.mov
+*.mp4
+*.m4v
 config.php
 activity.json

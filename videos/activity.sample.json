@@ -4,7 +4,7 @@
 	[
 		{
 			"filename": "video1.mov",
-			"title": "Room 1",
+			"title": "Hallway",
 			"activeRanges":
 			[
 				{
@@ -14,6 +14,17 @@
 				{
 					"startSecond": 24,
 					"endSecond": 30
+				}
+			]
+		},
+		{
+			"filename": "video2.mov",
+			"title": "Balcony",
+			"activeRanges":
+			[
+				{
+					"startSecond": 14,
+					"endSecond": 24
 				}
 			]
 		}

@@ -2,7 +2,7 @@
 function readInVideos() {
 	global $videoListFilename;
 	
-	$json = readJSONFromFile($videoListFilename);
+	$json = readJSONFromFile("videos/activity.json");
 	return parseJSONIntoVideos($json);
 }
 

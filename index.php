@@ -29,16 +29,17 @@ $rowCount = getRowCount($videoCount);
 			for($col = 0; $col < getRowSize($row); $col++) {
 				$videoIndex = getIndexByRowAndCol($row, $col);
 				$video = $videos[$videoIndex];
+				$videoFilename = $video->getFilename();
 				$activeRanges = $video->getActiveRanges();
 				$activeRange = $activeRanges[0];
 				
-				echo '<td class="videoCell" id="videoCell'.$videoIndex.'">';
-				echo '<div class="videoHeader" id="videoHeader'.$videoIndex.'">';
-				echo $video->getTitle();
-				echo '</div>';
-				echo '<video width="'.$videoWidth.'" height="'.$videoHeight.'" loop controls="" id="video'.$videoIndex.'">';
-				echo '<source src="videos/'.$video->getFilename().'" />';
+				echo '<td class="videoCell" id="videoCell-'.$videoFilename.'">';
+				echo '<div class="videoCellDiv">';
+				echo '<div class="videoHeader" id="videoHeader-'.$videoFilename.'">'.$video->getTitle().'</div>';
+				echo '<video width="'.$videoWidth.'" height="'.$videoHeight.'" loop autoplay controls="" id="video-'.$videoFilename.'">';
+				echo '<source src="videos/'.$videoFilename.'" />';
 				echo '</video>';
+				echo '</div>';
 				echo '</td>';
 			}
 			

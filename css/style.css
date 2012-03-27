@@ -17,22 +17,34 @@ table {
 	margin-right:auto;
 	background-color: #000000;
 	border-spacing: 0;
+	
 	border: 0;
 	padding: 0;
 }
 
 .videoHeader {
-	border: 0;
 	outline-width:0;
-	position: relative;
-	margin: 0;
-	padding: 0;
-	top: 20px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	color: #707070;
 	
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+.videoCellDiv {
+	position: relative;
+	
+	margin: 0;
+	border: 0;
+	padding: 0;
 }
 
 video {
 	outline-width:0;
+	
 	margin: 0;
 	border: 0;
 	padding: 0;
@@ -41,7 +53,8 @@ video {
 tr, th, td {
 	border-spacing: 0;
 	outline-width:0;
+	
 	margin: 0;
-	padding: 0;
 	border: 0;
+	padding: 0;
 }
