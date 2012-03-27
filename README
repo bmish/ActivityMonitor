@@ -1,0 +1,5 @@
+Setup:
+1. Copy classes/config.sample.php to classes/config.php and then customize settings.
+2. Add your video files to the videos directory.
+3. Copy videos/activity.sample.json to videos/activity.json and then list your video files and the time ranges that they contain activity in.
+4. View index.php in your browser.
